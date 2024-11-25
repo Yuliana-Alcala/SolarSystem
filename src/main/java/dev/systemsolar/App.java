@@ -19,9 +19,9 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-        modelPlanet venus = new modelPlanet("venus", 2,2.5,3.52,5,8,TypeOfPlanet.GASEOSO, true);
+        modelPlanet venus = new modelPlanet("venus", 2,2.5,3.52,5,8,TypeOfPlanet.GASEOSO, true,4,6);
 
-        modelPlanet jupiter = new modelPlanet("jupiter", 2,2.5,3.52,5,8,TypeOfPlanet.GASEOSO, true);
+        modelPlanet jupiter = new modelPlanet("jupiter", 2,2.5,3.52,5,8,TypeOfPlanet.GASEOSO, true,4,6);
 
             
 

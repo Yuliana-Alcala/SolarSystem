@@ -11,10 +11,12 @@ public class modelPlanet {
     private int averageDistanceToSun = 0;
     private TypeOfPlanet typeOfPlanet;
     private boolean observableWithNakeEye = false;
+    private int orbitalPeriodOfPlanetYears = 0;
+    private  int orbitalPeriodOfPlanetDays = 0;
     
 
     public modelPlanet(String name, int amountSatellite, double mass, double volume, int diameter, int averageDistanceToSun,
-            TypeOfPlanet typeOfPlanet, boolean observableWithNakeEye) {
+            TypeOfPlanet typeOfPlanet, boolean observableWithNakeEye, int orbitalPeriodOfPlanetYears, int orbitalPeriodOfPlanetDays) {
         this.name = name;
         this.amountSatellite = amountSatellite;
         this.mass = mass;
@@ -23,6 +25,8 @@ public class modelPlanet {
         this.averageDistanceToSun = averageDistanceToSun;
         this.typeOfPlanet = typeOfPlanet;
         this.observableWithNakeEye = observableWithNakeEye;
+        this.orbitalPeriodOfPlanetYears = orbitalPeriodOfPlanetYears;
+        this.orbitalPeriodOfPlanetDays = orbitalPeriodOfPlanetDays;
     }
 
     
@@ -73,12 +77,20 @@ public class modelPlanet {
         return observableWithNakeEye;
     }
 
+    public int getOrbitalPeriodOfPlanetYears() {
+        return orbitalPeriodOfPlanetYears;
+    }
 
+
+
+    public int getOrbitalPeriodOfPlanetDays() {
+        return orbitalPeriodOfPlanetDays;
+    }
 
     public String returnValueAttributeOfPlanets() {
         return String.format(
-            "Name: %s\nSatellites: %d\nMass: %.2f\nVolume: %.2f\nDiameter: %d km\nDistance to Sun: %d km\nType: %s\nObservable with Naked Eye: %b",
-            name, amountSatellite, mass, volume, diameter, averageDistanceToSun, typeOfPlanet, observableWithNakeEye
+            "Name: %s\nSatellites: %d\nMass: %.2f\nVolume: %.2f\nDiameter: %d km\nDistance to Sun: %d km\nType: %s\nObservable with Naked Eye: %b\nOrbital Period: %d years \nOrbital Period %d days",
+            name, amountSatellite, mass, volume, diameter, averageDistanceToSun, typeOfPlanet, observableWithNakeEye, orbitalPeriodOfPlanetYears,orbitalPeriodOfPlanetDays
         );
     }
 
@@ -100,7 +112,7 @@ public class modelPlanet {
 
         return isExterior;       
     
-    }
+    } 
     
     
 
@@ -108,10 +120,4 @@ public class modelPlanet {
 
 
 
-/*-
-
-
--:
--orbitalPeriodOfPlanetYears():
--orbitalPeriodOfPlanetDays():*/
 

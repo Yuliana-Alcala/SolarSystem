@@ -18,7 +18,7 @@ public class ControllerSolarSystem {
     public void getAttributeOfPlanet(){
         
         String planetAttributes = String.format(
-            "Name: %s\nSatellites: %d\nMass: %.2f\nVolume: %.2f\nDiameter: %d km\nDistance to Sun: %d km\nType: %s\nObservable with Naked Eye: %b",
+            "Name: %s\nSatellites: %d\nMass: %.2f\nVolume: %.2f\nDiameter: %d km\nDistance to Sun: %d km\nType: %s\nObservable with Naked Eye:%b\nOrbital Period: %d years\n Orbital Period %d days",
             modelPlanet.getName(),
             modelPlanet.getAmountSatellite(),
             modelPlanet.getMass(),
@@ -26,7 +26,9 @@ public class ControllerSolarSystem {
             modelPlanet.getDiameter(),
             modelPlanet.getAverageDistanceToSun(),
             modelPlanet.getTypeOfPlanet(),
-            modelPlanet.isObservableWithNakeEye()
+            modelPlanet.isObservableWithNakeEye(),
+            modelPlanet.getOrbitalPeriodOfPlanetYears(),
+            modelPlanet.getOrbitalPeriodOfPlanetDays()
         );
         
         double densityOfPlanet = modelPlanet.calculateDensityOfPlanet(modelPlanet.getMass(),modelPlanet.getVolume());
