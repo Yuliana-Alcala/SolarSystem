@@ -1,8 +1,8 @@
-# SolarSystem
+# Solar System
 
-# Se requiere un programa que modele el concepto de un planeta del sistema solar.
+## Se requiere un programa que modele el concepto de un planeta del sistema solar.
 
-# Un planeta tiene los siguientes atributos:
+## Un planeta tiene los siguientes atributos:
 Un nombre de tipo String con valor inicial de null.
 
 Cantidad de satélites de tipo int con valor inicial de cero.
@@ -20,7 +20,7 @@ Tipo de planeta de acuerdo con su tamaño, de tipo enumerado con los siguientes 
 Observable a simple vista, de tipo booleano con valor inicial false.
 
 
-# La clase debe incluir los siguientes métodos:
+## La clase debe incluir los siguientes métodos:
 
 La clase debe tener un constructor que inicialice los valores de sus respectivos atributos.
 
@@ -34,7 +34,7 @@ Un planeta exterior está situado más allá del cinturón de asteroides. El cin
 
 En el método main de la clase App se deben crear dos planetas y mostrar los valores de sus atributos en pantalla. Además, se debe imprimir la densidad de cada planeta y si el planeta es un planeta exterior del sistema solar.
 
-# Ampliación:
+## Ampliación:
 
 Agregar dos atributos a la clase Planeta. El primero debe representar el periodo orbital del planeta (en años). El segundo atributo representa el periodo de rotación (en días).
 
@@ -42,7 +42,7 @@ Modificar el constructor de la clase para que inicialice los valores de estos do
 
 Modificar el método imprimir para que muestre en pantalla los valores de los nuevos atributos.
 
-# Requisitos:
+## Requisitos:
 La clase planeta deberá estar testeada. (Mínimo 70% de coverage)
 El Readme deberá mostrar el diagrama de clases
 Entregables:
