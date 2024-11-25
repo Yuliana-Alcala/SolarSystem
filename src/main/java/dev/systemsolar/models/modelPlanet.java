@@ -94,7 +94,7 @@ public class modelPlanet {
         );
     }
 
-    public double calculateDensityOfPlanet(double mass, double volume){
+    public double calculateDensityOfPlanet(){
         double densityOfPlanet = mass / volume;
         return densityOfPlanet;
 

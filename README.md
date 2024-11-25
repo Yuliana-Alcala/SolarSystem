@@ -36,19 +36,13 @@ En el método main de la clase App se deben crear dos planetas y mostrar los val
 
 ## Ampliación:
 
-Agregar dos atributos a la clase Planeta. El primero debe representar el periodo orbital del planeta (en años). El segundo atributo representa el periodo de rotación (en días).
+Agregar dos atributos a la clase Planeta. El primero debe representar el periodo orbital del planeta (en años). 
+
+El segundo atributo representa el periodo de rotación (en días).
 
 Modificar el constructor de la clase para que inicialice los valores de estos dos nuevos atributos.
 
 Modificar el método imprimir para que muestre en pantalla los valores de los nuevos atributos.
 
-## Requisitos:
-La clase planeta deberá estar testeada. (Mínimo 70% de coverage)
-
-El Readme deberá mostrar el diagrama de clases
-
-Entregables:
-
-Enlace al repositorio de Github
-
-Captura de pantalla de la sección "Testing" de visual studio code donde se aprecia el coverage de los tests.
+## Diagrama de Clases
+![Diagrama de Clases](images/Diagram-classSystemSolar.png)
