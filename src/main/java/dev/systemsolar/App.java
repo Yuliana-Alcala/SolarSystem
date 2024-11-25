@@ -1,5 +1,12 @@
 package dev.systemsolar;
 
+import javax.naming.Context;
+
+import dev.systemsolar.controllers.ControllerSolarSystem;
+import dev.systemsolar.models.TypeOfPlanet;
+import dev.systemsolar.models.modelPlanet;
+import dev.systemsolar.views.viewSolarSystem;
+
 /**
  * Hello world!
  */
@@ -12,6 +19,13 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        modelPlanet venus = new modelPlanet("venus", 2,2.5,3.52,5,8,TypeOfPlanet.GASEOSO, true);
+
+        modelPlanet jupiter = new modelPlanet("jupiter", 2,2.5,3.52,5,8,TypeOfPlanet.GASEOSO, true);
+
+            
+
+        ControllerSolarSystem controller = new ControllerSolarSystem(venus);
+        
     }
 }
