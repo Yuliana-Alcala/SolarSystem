@@ -44,7 +44,11 @@ Modificar el método imprimir para que muestre en pantalla los valores de los nu
 
 ## Requisitos:
 La clase planeta deberá estar testeada. (Mínimo 70% de coverage)
+
 El Readme deberá mostrar el diagrama de clases
+
 Entregables:
+
 Enlace al repositorio de Github
-Captura de pantalla de la sección "Testing" de visual studio code donde se aprecia el coverage de los tests
+
+Captura de pantalla de la sección "Testing" de visual studio code donde se aprecia el coverage de los tests.
