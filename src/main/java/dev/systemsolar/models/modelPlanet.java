@@ -88,7 +88,17 @@ public class modelPlanet {
 
     }
 
-    public void determineIfPlanetInSystemSolar(){
+    public boolean determineIfPlanetIsExterior(){
+        double beltAsteroide = 3.4;
+        boolean isExterior;
+        if (getAverageDistanceToSun() > beltAsteroide){
+
+             isExterior = true;
+        }else{
+             isExterior = false;
+        }
+
+        return isExterior;       
     
     }
     

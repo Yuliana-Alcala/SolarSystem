@@ -30,9 +30,11 @@ public class ControllerSolarSystem {
         );
         
         double densityOfPlanet = modelPlanet.calculateDensityOfPlanet(modelPlanet.getMass(),modelPlanet.getVolume());
+        boolean isAExterior = modelPlanet.determineIfPlanetIsExterior();
 
-        viewSolarSystem.showAttributeOfPlanets(planetAttributes, densityOfPlanet);
-        
+        viewSolarSystem.showAttributeOfPlanets(planetAttributes);
+        viewSolarSystem.showDensityOfPlanet(densityOfPlanet);
+        viewSolarSystem.showPlanetIsExterior(isAExterior);
         
     }
 
